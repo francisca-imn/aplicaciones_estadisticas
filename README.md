@@ -23,6 +23,7 @@ Para este curso, utilizaremos los siguientes paquetes. Puedes instalarlos ejecut
 
 ```r
 install.packages(c("tidyverse", "ggplot2", "dplyr", "readr", "lubridate", "knitr"))
+```
 
 ## 📂 Estructura del Repositorio
 
