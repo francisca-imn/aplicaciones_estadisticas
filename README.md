@@ -22,7 +22,7 @@ RStudio es un entorno de desarrollo integrado (IDE) que facilita el uso de R con
 Para este curso, utilizaremos los siguientes paquetes. Puedes instalarlos ejecutando el siguiente código en R:
 
 ```r
-install.packages(c("tidyverse", "ggplot2", "dplyr", "readr", "lubridate", "knitr"))
+install.packages(c("tidyverse", "readr"))
 ```
 
 ## 📂 Estructura del Repositorio
