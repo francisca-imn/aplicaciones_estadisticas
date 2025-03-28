@@ -42,9 +42,24 @@ Hoy aprenderemos:
 ✅ **Prueba de comparación de medias** (*t-Student*)  
 ✅ **Visualización de datos con `ggplot2`**  
 
-## 📥 Datos de la Clase
+# 📥 Datos de la Clase
 
 Descarga el archivo CSV con los datos forestales en la carpeta **`data/`**.
+
+## 📅 Clase 2: Análisis de Varianza (ANOVA) y Comparaciones Múltiples
+
+Hoy aprenderemos:
+
+✅ **Carga y exploración de datos en formato Excel** con `openxlsx`  
+✅ **Análisis de Varianza (ANOVA)** con `aov()`  
+✅ **Interpretación de los resultados de ANOVA**  
+✅ **Prueba de comparaciones múltiples de Tukey** con `TukeyHSD()`  
+✅ **Visualización de resultados mediante `ggplot2` (boxplot)**  
+
+# 📥 Datos de la Clase
+
+El archivo **`02_datos_cobertura_vegetal.xlsx`** contiene mediciones de cobertura vegetal en diferentes regiones de Chile. 
+Los grupos representan distintos tipos de ecosistemas, como bosques templados, matorrales y estepas, evaluando la variación en la cobertura vegetal.
 
 ---
 
