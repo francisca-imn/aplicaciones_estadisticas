@@ -31,7 +31,7 @@ install.packages(c("tidyverse", "readr"))
 - **`codigo/`**: Código en R con ejemplos y ejercicios.
 - **`README.md`**: Este documento con información del curso.
 
-## 📅 Clase 1: Introducción a R y Estadística Descriptiva
+# 📅 Clase 1: Introducción a R y Estadística Descriptiva
 
 Hoy aprenderemos:
 
@@ -42,11 +42,11 @@ Hoy aprenderemos:
 ✅ **Prueba de comparación de medias** (*t-Student*)  
 ✅ **Visualización de datos con `ggplot2`**  
 
-# 📥 Datos de la Clase
+### 📥 Datos de la Clase
 
 Descarga el archivo CSV con los datos forestales en la carpeta **`data/`**.
 
-## 📅 Clase 2: Análisis de Varianza (ANOVA) y Comparaciones Múltiples
+# 📅 Clase 2: Análisis de Varianza (ANOVA) y Comparaciones Múltiples
 
 Hoy aprenderemos:
 
@@ -56,11 +56,11 @@ Hoy aprenderemos:
 ✅ **Prueba de comparaciones múltiples de Tukey** con `TukeyHSD()`  
 ✅ **Visualización de resultados mediante `ggplot2` (boxplot)**  
 
-# 📥 Datos de la Clase
+### 📥 Datos de la Clase
 
 El archivo **`02_datos_cobertura_vegetal.xlsx`** contiene mediciones de cobertura vegetal en diferentes regiones de Chile. 
 Los grupos representan distintos tipos de ecosistemas, como bosques templados, matorrales y estepas, evaluando la variación en la cobertura vegetal.
 
 ---
 
-Este repositorio será actualizado con más materiales a medida que avancemos en el curso. **¡A programar en R! 🚀**
+Este repositorio será actualizado a medida que avancemos en el curso. **¡A programar en R! 🚀**
