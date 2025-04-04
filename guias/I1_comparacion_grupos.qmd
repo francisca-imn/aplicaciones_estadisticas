@@ -1,0 +1,110 @@
+---
+author: "Francisca Muñoz Narbona"
+email: fmnarbona@uc.cl
+format: html
+editor: visual
+---
+
+# 🧪 Guía de repaso I1 - Aplicaciones Estadísticas
+
+> 💌 **Contacto:** [fmnarbona@uc.cl](mailto:fmnarbona@uc.cl)  
+> Si tienes dudas sobre esta guía, ¡escríbeme sin problema! 😊
+
+---
+
+## Parte I: Operadores y tipos de objetos en R 🌿📦
+
+#### Clases de objetos
+
+¡Hola! Antes de partir, recordemos la creación de objetos y sus clases. Para ello, crea los siguientes objetos:
+
+```{r}
+x <- 5.2
+y <- "bosque nativo"
+z <- TRUE
+q <- "5.2"
+ambientes <- c("bosque", "desierto", "humedal")
+random <- c("hola", "28", 95)
+```
+
+1. ¿Cuál es la clase de cada objeto? ¿qué función utilizaste?
+2. ¿Cuál es la diferencia entre el objeto x e y? ¿Y entre el objeto y con ambientes?
+3. ¿Cuál es la clase del objeto random? ¿Encuentras algo extraño? 🤔
+
+#### Tabla de operadores en R ➕
+Repasemos otras cosas básicas de R. A continuación te dejo una tabla de operadores que hay en este lenguaje; varios de ellos los hemos repasado en ayudantía y los demás son importantes que los conozcan.
+
+| Operador | Descripción          | Ejemplo         | Resultado |
+|----------|----------------------|------------------|-----------|
+| `+`      | Suma                 | `3 + 5`          | 8         |
+| `-`      | Resta                | `4 - 2`          | 2         |
+| `-`      | Negación             | `-7`             | -7        |
+| `*`      | Multiplicación       | `3 * 6`          | 18        |
+| `**`     | Potenciación         | `2 ** 3`         | 8         |
+| `/`      | División             | `7.5 / 2`        | 3.75      |
+| `%%`     | Módulo               | `8 %% 3`         | 2         |
+| `%/%`    | División entera      | `7.5 %/% 2`      | 3         |
+| `>`      | Mayor que            | `5 > 3`          | TRUE      |
+| `<`      | Menor que            | `5 < 3`          | FALSE     |
+| `==`     | Igual a              | `5 == 5`         | TRUE      |
+| `!=`     | Distinto de          | `5 != 3`         | TRUE      |
+| `>=`     | Mayor o igual que    | `5 >= 5`         | TRUE      |
+| `<=`     | Menor o igual que    | `4 <= 2`         | FALSE     |
+
+
+Con la ayuda anterior, responde:
+
+4. ¿Cuánto es la división entera de 10 en 3?
+5. ¿Cuál es el resto (módulo) de dividir 17 entre 5?
+6. Calcula 4 al cubo usando el operador de potenciación.
+7. ¿Qué devuelve `5 > 2`?
+8. ¿Y `5 < 2`?
+9. Evalúa: ¿`6 == 6`? ¿Qué significa?
+9. Evalúa: ¿`4 != 3`? ¿Qué significa?
+10. Evalúa: `!FALSE`
+11. ¿Qué valor tiene esta operación combinada: `2 + 3 * 4`?
+12. ¿Y si la agrupas con paréntesis así: `(2 + 3) * 4`?
+
+---
+
+## Parte II: Cargar datos y comparar grupos 📥🧪
+
+#### Cargar archivos y explorar los datos 📂
+
+En este ejercicio, usarás el paquete `readr` (parte del `tidyverse`) para leer un archivo `.csv`, y luego analizarás diferencias entre medias de grupos. Descarga el archivo `03_memorias_naturaleza.csv` que está en la carpeta `data/` y cárgalo en R  en un objeto llamados `datos` (ayuda: si no te acuerdas, revisa los scripts de las ayudantías anteriores 😊).
+
+1. Usa head(datos) para ver las primeras filas.
+2. ¿Cuántos registros hay? ¿Cuáles son las columnas?
+3. Usa `table(datos$genero)` y `table(datos$ecosistema_favorito)` para conocer los grupos. ¿Qué obtienes?
+4. ¿Qué obtienes con summary()?
+
+#### Comparación entre grupos 👥
+
+Responde la siguiente pregunta: **¿Existe una diferencia significativa en el nivel de emoción entre hombres y mujeres?** Esto lo puedes hacer con una de las funciones que vimos en detalle durante una ayudantía, `t.test()`. Lamentablemente, los ayudantes olvidamos cómo se utiliza la función 😅, así que para responder esta pregunta te pedimos que nos expliques paso a paso los argumentos que hay que utilizar, por favor 🙏.
+
+Una vez corras la función, por favor responde:
+
+- ¿Cuáles son las hipótesis detrás de la función?
+- ¿Cuál grupo tiene mayor promedio?
+- ¿Qué indica el valor p?
+- ¿Qué concluyes?
+
+Ahora **queremos saber si el nivel de emoción cambia según el ecosistema favorito de las personas**. Para esto, podemos usar un ANOVA con la función `aov()`, ¡lo aprendimos la última ayudantía! Para esto, responde:
+
+- ¿Cuáles son las hipótesis detrás de la función?
+- ¿Cuál grupo tiene mayor promedio?
+- ¿Qué indica el valor p?
+- ¿Qué concluyes?
+
+---
+
+## Parte III: Realiza los análisis de R a mano ✍️
+
+Estimad@, espero hayas podido resolver la guía hasta esta parte sin problemas 😊. Es muy importante saber utilizar herramientas computacionales para analizar datos de manera más eficiente, sin embargo, es importante tener nociones básicas del procedimiento que el software realiza detrás. Este es un curso de estadística, por lo tanto, te pedimos que a parte adjuntes un archivo `.pdf` resolver los dos ejercicios de comparación de grupo a mano. 
+
+
+> 🙋‍♀️ **Recuerda:** No es necesario que los cálculos sean perfectos, lo importante es que demuestres comprensión del proceso.
+
+
+
+
