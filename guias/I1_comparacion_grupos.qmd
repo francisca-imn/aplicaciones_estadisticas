@@ -1,7 +1,13 @@
 ---
+title: "Guía repaso I1 - Aplicaciones Estadísticas"
 author: "Francisca Muñoz Narbona"
 email: fmnarbona@uc.cl
-format: html
+format:
+  html:
+    theme: journal
+    toc: true
+    toc-depth: 2
+    code-fold: true
 editor: visual
 ---
 
