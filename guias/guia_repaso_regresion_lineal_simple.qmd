@@ -1,0 +1,110 @@
+---
+author: "Francisca Muñoz Narbona"
+email: fmnarbona@uc.cl
+format:
+  html:
+    self-contained: true
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    code-fold: true
+editor: visual
+---
+
+# 📘 Guía de Aprendizaje 04: Regresión simple
+
+💡 **Objetivo**: El objetivo de este ejercicio es encontrar, mediante algún mecanismo, las estimaciones para β₀ y β₁ de esta forma proponer un modelo de relación estadística entre dos variables, una aleatoria Y y una fija X.
+
+---
+
+## 🧠 Conceptualización
+
+El análisis de Regresión es una metodología estadística que se aplica tanto a estudios observacionales como experimentales, y utiliza la relación entre dos o más variables cuantitativas tal que una variable pueda ser pronosticada a partir de la otra u otras. Esta metodología es ampliamente usada en las ciencias biológicas como también en la economía, en las ciencias sociales y otras disciplinas. En principio se considerará como una simple variable predictora (X) es usada para predecir la variable de interés (Y). Estimar los parámetros de la ecuación es un objetivo inicial pero importante. 
+
+El modelo más elemental para relacionar dos variables es:
+
+**Yᵢ = β₀ + β₁Xᵢ + εᵢ**
+
+Donde:
+
+- **Yᵢ**: valor de la variable respuesta para la observación *i*  
+- **Xᵢ**: valor de la variable predictora para la observación *i*  
+- **εᵢ**: error aleatorio asociado a la observación *i*  
+- **β₀**: intercepto del modelo (ordenada al origen)  
+- **β₁**: pendiente del modelo (cuánto cambia Y por unidad de cambio en X)
+
+Se asume que los errores **εᵢ** son independientes, con media cero y varianza constante (**σ²**).
+
+---
+
+## ✏️ Estimación de parámetros
+
+Una vez definido el modelo, el objetivo es estimar los parámetros β₀ y β₁. El método más utilizado para esto es el de **Mínimos Cuadrados**, que consiste en minimizar la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos por el modelo.
+
+$$
+Q = \sum_{i=1}^n \left( Y_i - (b_0 + b_1 X_i) \right)^2
+$$
+
+Los estimadores se obtienen con las siguientes fórmulas:
+
+$$
+b_1 = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sum (X_i - \bar{X})^2} = \frac{\sum XY - \frac{\sum X \sum Y}{n}}{\sum X^2 - \frac{(\sum X)^2}{n}}
+$$
+
+$$
+b_0 = \bar{Y} - b_1 \bar{X}
+$$
+
+
+---
+
+## 🧪 Ejercicio práctico
+
+Un productor de carne necesita establecer una relación entre el **peso en vara** (Y, en cientos de libras) y el **peso vivo** (X, también en cientos de libras) de sus novillos. Se toma una muestra de 9 novillos, obteniendo los siguientes datos:
+
+| Peso vivo (X) | Peso vara (Y) |
+|---------------|---------------|
+| 4.2 | 2.8 |
+| 3.8 | 2.5 |
+| 4.8 | 3.1 |
+| 3.4 | 2.1 |
+| 4.5 | 2.9 |
+| 4.6 | 2.8 |
+| 4.3 | 2.6 |
+| 3.7 | 2.4 |
+| 3.9 | 2.5 |
+
+### Actividades:
+
+**a)** Estime los parámetros β₀ y β₁ por mínimos cuadrados. *Antes de calcular, grafique los datos y evalúe si el modelo lineal es apropiado. Estime a ojo la pendiente.*
+
+**b)** Interprete los coeficientes obtenidos, considerando el contexto del problema. Piense que usted está presentando un reporte a la empresa que va a importar la carne desde nuestro país. 
+
+**c)** Como usted debe estar preguntándose ¿será el modelo estimado un buen modelo, esto es, que represente bien los datos? Para esto pruebe las hipótesis H₀: β₁ = 0 vs H₁: β₁ ≠ 0.  Utilice el análisis de varianza y el estadístico **F**.
+
+**d)** Calcule un intervalo de confianza del 95% para **β₁**.
+
+**e)** Prediga el peso en vara esperado para novillos que pesan:
+
+- 400 libras (X = 4.0)
+- 600 libras (X = 6.0)
+
+**f)** De la respuesta anterior ¿Cuál pronóstico le merece mayor confianza? ¿Por qué?
+
+---
+
+#### 🔎 Respuesta numérica esperada (solo como referencia)
+
+> 💡 *No es necesario que llegues exactamente a estos valores, pero si los resultados son similares está perfecto (puede haber pequeñas diferencias por redondeo decimal).*
+
+- **a)** b₁ ≈ 0.61  b₀ ≈ 0.085  
+- **c)** Sumas de cuadrados:  
+  - Regresión: 0.6533  
+  - Residual: 0.0667525  
+  - Total: 0.72  
+- **d)** Intervalo 95% para β₁: 0.4402 ≤ β₁ ≤ 0.7923  
+- **e)** Predicciones:  
+  - X = 4.0 → 3.69865  
+  - X = 6.0 → 2.6303 (menos confiable por extrapolación)
+
+---
