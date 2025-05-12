@@ -62,11 +62,14 @@ El archivo **02_datos_cobertura_vegetal.xlsx** contiene mediciones de cobertura 
 Los grupos representan distintos tipos de ecosistemas, como bosques templados, matorrales y estepas, evaluando la variación en la cobertura vegetal.
 
  # 📅 Clase 3: Regresión Lineal Simple
-✅ Modelo lineal simple con lm()
-✅ Revisión de supuestos del modelo (normalidad, homocedasticidad, independencia)
-✅ Interpretación de coeficientes y R²
+
+Hoy aprenderos:
+
+✅ Modelo lineal simple con lm()  
+✅ Revisión de supuestos del modelo (normalidad, homocedasticidad, independencia) 
+✅ Interpretación de coeficientes y R²  
 ✅ Visualización del ajuste con geom_smooth() de ggplot2
-✅ Análisis de residuos y leverage
+✅ Análisis de residuos y leverage  
 
 📁 El código y los datos asociados están en las carpetas codigo/, data/ y guias/.
 
